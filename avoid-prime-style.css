@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#title-screen, #game-container {
+    display: none;
+}
+
+#title-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#game-container {
+    display: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.grid button {
+    width: 100%;
+    aspect-ratio: 1;
+    font-size: 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.grid button.selected {
+    background-color: green;
+    cursor: default;
+}
+
+.grid button.failed {
+    background-color: red;
+    cursor: default;
+}
+
+#retry-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#retry-btn:hover {
+    background-color: darkblue;
+}
+
+.prime-text {
+    color: red;
+}
+
+.safe-text {
+    color: green;
+}
+
+.failed-text {
+    color: red;
+}
+
+.clear-text {
+    color: yellow;
+}
+
+#game-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#message {
+    font-size: 18px;
+    margin-bottom: 20px;
+    min-height: 50px;
+}

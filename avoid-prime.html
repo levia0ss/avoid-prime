@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Avoid selecting a prime number!">
+    <title>Avoid Prime Game</title>
+    <link rel="stylesheet" href="avoid-prime-style.css">
+</head>
+<body>
+
+<!-- タイトル画面 -->
+<div id="title-screen">
+    <h1>Avoid <span class="prime-text">Prime</span> Game</h1>
+    <button id="start-btn">Start</button>
+</div>
+
+<!-- ゲーム画面 -->
+<div id="game-container">
+    <div id="game-header">Don't select <span class="prime-text">Prime</span></div>
+    <div id="message"></div>
+    <div class="grid" id="button-grid"></div>
+    <button id="retry-btn">Retry</button>
+</div>
+
+<script src="avoid-prime-script.js"></script>
+</body>
+</html>
